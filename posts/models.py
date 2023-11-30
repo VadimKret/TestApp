@@ -31,7 +31,7 @@ class Posts(models.Model):
             auto_now = True,
             verbose_name = "Последнее обновление"
       )
-      active=models.BooleanField(
+      active = models.BooleanField(
             verbose_name = "Активна",
             default = True
       )

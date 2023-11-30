@@ -1,6 +1,11 @@
 from django.shortcuts import render
 from django.http import HttpRequest
 
+from posts.models import Posts
+
 def page_posts(reqwests):
-    return HttpRequest("Hallo admin")
+    posts = Posts.objects.all()
+
+def posts(requests):
+    return render(request, posts.html)
 # Create your views here.
